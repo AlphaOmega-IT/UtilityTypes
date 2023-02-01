@@ -25,8 +25,8 @@
 package me.blvckbytes.utilitytypes;
 
 @FunctionalInterface
-public interface FUnsafeBiConsumer<I1, I2, E extends Throwable> {
+public interface FUnsafeBiFunction<I1, I2, O, E extends Throwable> {
 
-  void accept(I1 input1, I2 input2) throws E;
+  O apply(I1 i1, I2 i2) throws E;
 
 }
